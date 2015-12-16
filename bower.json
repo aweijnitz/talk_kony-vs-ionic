@@ -1,0 +1,25 @@
+{
+  "name": "Kony vs. Ionic",
+  "version": "0.1.0",
+  "main": [
+    "./index.html"
+  ],
+  "license": "MIT",
+  "description": "Developer's take on Kony and Ionic",
+  "authors": [
+    "Anders Weijnitz"
+  ],
+  "dependencies": {
+    "headjs": "~1.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

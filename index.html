@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Kony vs. Ionic</title>
+
+    <meta name="description" content="Looking at Kony and Ionic from a development perspective">
+    <meta name="author" content="Anders Weijnitz">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Kony vs. Ionic</h1>
+
+            <h3>Two roads to the same goal</h3>
+
+            <p>
+                <small>Created by <a href="http://andersw.info">Anders Weijnitz</a> / <a
+                        href="http://twitter.com/aweijnitz">@aweijnitz</a>
+                </small>
+            </p>
+        </section>
+
+        <section>
+            <h2>Scope</h2>
+
+            <p>
+                Look at the two products/platforms from a developer's perspective.
+            </p>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+            <section>
+                <h2>Quick background</h2>
+
+                <p>Kony <em>what?</em> Ionic?</p>
+
+            </section>
+            <section>
+                <img src="img/kony_homepage.png">
+                <!--
+                <h2 style="background-color: #bee4fd; color: #1c1e20" class="fragment">Kony</h2>
+
+                <p style="background-color: #bee4fd; color: #1c1e20" class="fragment">Aims to provide a complete
+                    end-to-end solution for all things enterprise mobile. Full MEAP, including MDM.</p>
+
+                <p style="background-color: #bee4fd; color: #1c1e20; font-size: smaller" class="fragment">MEAP: Mobile
+                    Enterprise Application Platform</p>
+
+                <p style="background-color: #bee4fd; color: #1c1e20; font-size: smaller" class="fragment">MDM: Mobile
+                    Device Management</p>
+                    -->
+
+            </section>
+            <section>
+                <img src="img/ionic_homepage.png">
+                <!--
+                <h2 style="background-color: #bee4fd; color: #1c1e20" class="fragment">Ionic</h2>
+
+                <p style="background-color: #bee4fd; color: #1c1e20" class="fragment">Aims to provide a complete
+                    multi-device hybrid app framwork</p>
+
+                <p style="background-color: #bee4fd; color: #1c1e20; font-size: smaller" class="fragment">Based on Cordova</p>
+                -->
+            </section>
+            <section>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Kony</th>
+                        <th>Ionic</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Frontend SDK</td>
+                        <td>&#x2705</td>
+                        <td>&#x2705</td>
+                    </tr>
+                    <tr>
+                        <td>API Server</td>
+                        <td>&#x2705</td>
+                        <td>Pick your own</td> <!-- &#x274C -->
+                    </tr>
+                    <tr>
+                        <td>MDM</td>
+                        <td>&#x2705</td>
+                        <td>(Ionic View)</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud services</td>
+                        <td>&#x2705</td>
+                        <td>&#x2705</td>
+                    </tr>
+                    <tr>
+                        <td>UI Designer</td>
+                        <td>&#x2705</td>
+                        <td>&#x2705</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section>
+            <h1>The Good</h1>
+
+        </section>
+
+        <section>
+            <h2>Kony</h2>
+
+            <p class="fragment">End-to-end convenience</p>
+            <p class="fragment">Easy to integrate webservices</p>
+            <p class="fragment">The Eclipse Studio - Do everything from one place</p>
+
+        </section>
+
+        <section>
+            <h2>Ionic</h2>
+
+            <p class="fragment">Modern, using familiar technologies</p>
+            <p class="fragment">Modular and easily extendable</p>
+            <p class="fragment">Open - Huge ecosystem</p>
+
+        </section>
+
+        <section>
+            <h1>The Bad</h1>
+
+        </section>
+
+        <section>
+            <h2>Kony</h2>
+
+            <p class="fragment">Closed. Small community</p>
+            <p class="fragment">Unit Testing is very difficult</p>
+            <p class="fragment">The UI builder! (weak team support)</p>
+
+        </section>
+
+        <section>
+            <h2>Ionic</h2>
+
+            <p class="fragment">Hybrid apps only</p>
+            <p class="fragment">AngularJS is complex for beginners</p>
+            <p class="fragment">Few enterprise examples (mostly B2C)</p>
+
+        </section>
+
+        <section>
+            <h2>Field Experiences</h2>
+
+            <p class="fragment">Kony is not delivering on the enterprise promise</p>
+            <p class="fragment">Teamwork and git merging is not well supported with Kony</p>
+            <p class="fragment">Ionic looks very promising (PoC only though)</p>
+
+        </section>
+
+
+
+        <section id="themes">
+            <h2>Themes</h2>
+
+            <p>
+                reveal.js comes with a few themes built in: <br>
+                <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
+                    (default)</a> -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
+                <br>
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+                -
+                <a href="#"
+                   onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                        function linkify( selector ) {
+                        if( supports3DTransforms ) {
+
+                        var nodes = document.querySelectorAll( selector );
+
+                        for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+                        var node = nodes[i];
+
+                        if( !node.className ) {
+                        node.className += ' roll';
+                        }
+                        }
+                        }
+                        }
+                    </code></pre>
+            <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.
+            </p>
+        </section>
+
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
